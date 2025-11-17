@@ -28,7 +28,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 20px;
+  gap: 1rem;
   margin: 0 2rem 0 0;
 }
 
@@ -51,17 +51,41 @@ header {
 }
 
 .section-1 {
+  height: 40vh;
   background-color: #333;
   color: white;
-  padding: 2em;
   text-align: center;
 }
 
 .title {
-  padding: 1em;
+  padding: 1.2em;
   background: linear-gradient(90deg, #ff542a, #ffd1ad);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  font-size: 3rem;
 }
+
+.section-2 {
+  height: 40vh;
+  background: linear-gradient(90deg, #ff454c, #ff977a);
+  color: rgb(227, 227, 227);
+}
+
+.h3-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1em;
+}
+
+.h3-text {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.section-3 {
+  height: 40vh;
+  background: linear-gradient(90deg, #c2e9fb, #a1c4fd);
+}
+
