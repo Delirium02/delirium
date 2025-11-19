@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-blue: #2e61da;
+  --light-blue: #59b3fd;
+  --blue-gradient: linear-gradient(90deg, #2e61da, #59b3fd);
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -19,9 +25,16 @@ header {
 }
 
 #delirium-header {
+  font-family: cursive;
   font-size: 2.5rem;
   margin: 1rem 0 1rem 2rem;
   color: white;
+}
+
+#delirium-header::before {
+  content: "🌀";
+  margin-right: 0.5rem;
+  color: rgb(255, 28, 142);
 }
 
 .header-links {
@@ -59,17 +72,23 @@ header {
 
 .title {
   padding: 1.2em;
-  background: linear-gradient(90deg, #ff542a, #ffd1ad);
+  background: var(--blue-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3rem;
 }
 
+.title-text {
+  font-size: 1.2rem;
+  color: var(--light-blue);
+}
+
 .section-2 {
   height: 40vh;
-  background: linear-gradient(90deg, #ff454c, #ff977a);
-  color: rgb(227, 227, 227);
+  background: var(--blue-gradient);
+  color: #333;
+  padding: 1.8em;
 }
 
 .h3-heading {
